@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5508f3a8-798b-4a06-8ca3-2c3ae9b859d6" name="Changes" comment="pom update - Compiler update">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+    <list default="true" id="5508f3a8-798b-4a06-8ca3-2c3ae9b859d6" name="Changes" comment="ScreenShots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CucumberSpriteCloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberSpriteCloud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/SampleApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/SampleApp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HomePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefirebooter17864889478610688597.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/UserInfoModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/models/UserInfoModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/ClientSideDelayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjects/ClientSideDelayPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/DynamicTablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjects/DynamicTablePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjects/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/SampleAppLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjects/SampleAppLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/ClientDelayPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/ClientDelayPageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/DynamicTablePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/DynamicTablePageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CucumberSpriteCloud-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CucumberSpriteCloud-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/advanced-reports/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/advanced-reports/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/08-10-2022/Sample App - Success login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Runner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Runner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/HomePageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SampleAppPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SampleAppPageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/BaseActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/BaseActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Driver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665230268510</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ScreenShots">
+      <created>1665247759816</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665247759816</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,23 +290,8 @@
     <MESSAGE value="pom update" />
     <MESSAGE value="pom update - 1" />
     <MESSAGE value="pom update - Compiler update" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom update - Compiler update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utils/BaseActions.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utils/BaseActions.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ScreenShots" />
+    <option name="LAST_COMMIT_MESSAGE" value="ScreenShots" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

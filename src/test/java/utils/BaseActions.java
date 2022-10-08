@@ -36,7 +36,7 @@ public class BaseActions {
         TakesScreenshot ts = (TakesScreenshot) webDriver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        FileUtils.copyFile(source,new File("target/screenshots/" + sdf.format(timestamp.getTime())+ "/" +scenarioName+".png"));
+        FileUtils.copyFile(source,new File("target/screenshots/" + sdf.format(timestamp.getTime())+ " - " +scenarioName+".png"));
     }
 
     public void goToHomepage() {

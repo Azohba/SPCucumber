@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner" time="77.843" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner" time="77.704" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
@@ -62,10 +62,10 @@
     <property name="sun.stdout.encoding" value="cp857"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Client Delay - 1 Click test" classname="Client Delay features #1" time="19.515"/>
-  <testcase name="Client Delay - 2 Click test" classname="Client Delay features #1" time="35.766"/>
-  <testcase name="Check Chrome Cpu load" classname="Client Delay features #2" time="3.806"/>
-  <testcase name="Sample App - Success login" classname="SampleApp features" time="4.91">
+  <testcase name="Client Delay - 1 Click test" classname="Client Delay features #1" time="20.913"/>
+  <testcase name="Client Delay - 2 Click test" classname="Client Delay features #1" time="34.786"/>
+  <testcase name="Check Chrome Cpu load" classname="Client Delay features #2" time="3.78"/>
+  <testcase name="Sample App - Success login" classname="SampleApp features" time="4.19">
     <failure message="Invalid Username/Password expected:&lt;[Invalid username/password]&gt; but was:&lt;[Welcome, Onur!]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, Onur!]>
 ]]></failure>
     <system-out><![CDATA[
@@ -82,25 +82,25 @@ Scenario: Sample App - Success login   &amp#27;[90m# src/test/java/features/Samp
 	at âœ½.check successLogin login status(file:///C:/Users/onur.tarar/IdeaProjects/CucumberSpriteCloud/src/test/java/features/SampleApp.feature:12)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 29473
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 1810
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Eki 08, 2022 7:46:03 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+Eki 08, 2022 8:10:50 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Eki 08, 2022 7:46:06 ÖS pageObjects.HomePage clickHrefLink
+Eki 08, 2022 8:10:53 ÖS pageObjects.HomePage clickHrefLink
 INFO: Click Href...
-Eki 08, 2022 7:46:07 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
 INFO: Insert Login negative credentials...
-Eki 08, 2022 7:46:07 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
 INFO: User logged out...  You can login if you want...
-Eki 08, 2022 7:46:07 ÖS pageObjects.SampleAppLoginPage clickLoginButton
+Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage clickLoginButton
 INFO: Click Login Button...
-Eki 08, 2022 7:46:07 ÖS pageObjects.SampleAppLoginPage checkLoginStatus
+Eki 08, 2022 8:10:54 ÖS pageObjects.SampleAppLoginPage checkLoginStatus
 INFO: Check login status...
 ]]></system-err>
   </testcase>
-  <testcase name="Sample App : Success login #1" classname="SampleApp features" time="5.08"/>
-  <testcase name="Sample App : Success login #2" classname="SampleApp features" time="4.234"/>
-  <testcase name="Sample App : Success login #3" classname="SampleApp features" time="4.149"/>
+  <testcase name="Sample App : Success login #1" classname="SampleApp features" time="3.977"/>
+  <testcase name="Sample App : Success login #2" classname="SampleApp features" time="4.616"/>
+  <testcase name="Sample App : Success login #3" classname="SampleApp features" time="5.08"/>
 </testsuite>

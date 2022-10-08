@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="77.511">
-    <testcase classname="Client Delay features" name="Client Delay - 1 Click test" time="19.457">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="77.391">
+    <testcase classname="Client Delay features" name="Client Delay - 1 Click test" time="20.852">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click clientdelay href link............................................passed
 And click 1 times to Client Side button.....................................passed
 Then check success messages.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Client Delay features" name="Client Delay - 2 Click test" time="35.761">
+    <testcase classname="Client Delay features" name="Client Delay - 2 Click test" time="34.781">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click clientdelay href link............................................passed
 And click 2 times to Client Side button.....................................passed
 Then check success messages.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Client Delay features" name="Check Chrome Cpu load" time="3.801">
+    <testcase classname="Client Delay features" name="Check Chrome Cpu load" time="3.776">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click dynamictable href link...........................................passed
 Then get Chrome Cpu value...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="SampleApp features" name="Sample App - Success login" time="4.9">
+    <testcase classname="SampleApp features" name="Sample App - Success login" time="4.178">
         <failure message="Invalid Username/Password expected:&lt;[Invalid username/password]&gt; but was:&lt;[Welcome, Onur!]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given go to homepage........................................................passed
 When click sampleapp href link..............................................passed
 And enter Onur  and pws.....................................................passed
@@ -35,7 +35,7 @@ org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid userna
 	at ✽.check successLogin login status(file:///C:/Users/onur.tarar/IdeaProjects/CucumberSpriteCloud/src/test/java/features/SampleApp.feature:12)
 ]]></failure>
     </testcase>
-    <testcase classname="SampleApp features" name="Sample App : Success login" time="5.076">
+    <testcase classname="SampleApp features" name="Sample App : Success login" time="3.975">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click sampleapp href link..............................................passed
 And enter ''  and ''........................................................passed
@@ -43,7 +43,7 @@ And click Log In button.....................................................pass
 Then check failedLogin login status.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="SampleApp features" name="Sample App : Success login 2" time="4.228">
+    <testcase classname="SampleApp features" name="Sample App : Success login 2" time="4.612">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click sampleapp href link..............................................passed
 And enter 'asdd'  and ''....................................................passed
@@ -51,7 +51,7 @@ And click Log In button.....................................................pass
 Then check failedLogin login status.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="SampleApp features" name="Sample App : Success login 3" time="4.145">
+    <testcase classname="SampleApp features" name="Sample App : Success login 3" time="5.076">
         <system-out><![CDATA[Given go to homepage........................................................passed
 When click sampleapp href link..............................................passed
 And enter ''  and 'pwd'.....................................................passed
