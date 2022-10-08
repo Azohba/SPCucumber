@@ -3,10 +3,11 @@ Feature: Client Delay features
   Background:
     Given go to homepage
 
+
   Scenario:  Sample App : Success login
   -------------------------------
     When click sampleapp href link
-    And  enter Onur  and pwd
+    And  enter Onur  and pws
     And click Log In button
     Then check successLogin login status
 
