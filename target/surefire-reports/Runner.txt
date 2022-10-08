@@ -1,7 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Runner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 77.704 sec <<< FAILURE! - in Runner
-Sample App - Success login(SampleApp features)  Time elapsed: 4.19 sec  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 80.325 sec <<< FAILURE! - in Runner
+Sample App - Success login(SampleApp features)  Time elapsed: 4.822 sec  <<< FAILURE!
 org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, Onur!]>
+
+Sample App : Success login #1(SampleApp features)  Time elapsed: 4.983 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, ''!]>
 

@@ -21,7 +21,7 @@ Feature: SampleApp features
 
     Examples:
       | name | pass | status      |
-      |      |      | failedLogin |
+      |      |      | successLogin |
       | asdd |      | failedLogin |
       |      | pwd  | failedLogin |
 

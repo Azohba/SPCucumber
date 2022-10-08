@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner" time="77.704" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner" time="80.325" tests="7" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
@@ -62,10 +62,10 @@
     <property name="sun.stdout.encoding" value="cp857"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Client Delay - 1 Click test" classname="Client Delay features #1" time="20.913"/>
-  <testcase name="Client Delay - 2 Click test" classname="Client Delay features #1" time="34.786"/>
-  <testcase name="Check Chrome Cpu load" classname="Client Delay features #2" time="3.78"/>
-  <testcase name="Sample App - Success login" classname="SampleApp features" time="4.19">
+  <testcase name="Client Delay - 1 Click test" classname="Client Delay features #1" time="20.539"/>
+  <testcase name="Client Delay - 2 Click test" classname="Client Delay features #1" time="35.287"/>
+  <testcase name="Check Chrome Cpu load" classname="Client Delay features #2" time="4.453"/>
+  <testcase name="Sample App - Success login" classname="SampleApp features" time="4.822">
     <failure message="Invalid Username/Password expected:&lt;[Invalid username/password]&gt; but was:&lt;[Welcome, Onur!]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, Onur!]>
 ]]></failure>
     <system-out><![CDATA[
@@ -82,25 +82,60 @@ Scenario: Sample App - Success login   &amp#27;[90m# src/test/java/features/Samp
 	at âœ½.check successLogin login status(file:///C:/Users/onur.tarar/IdeaProjects/CucumberSpriteCloud/src/test/java/features/SampleApp.feature:12)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 1810
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 47319
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Eki 08, 2022 8:10:50 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+Eki 08, 2022 11:21:50 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Eki 08, 2022 8:10:53 ÖS pageObjects.HomePage clickHrefLink
+Eki 08, 2022 11:21:53 ÖS pageObjects.HomePage clickHrefLink
 INFO: Click Href...
-Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+Eki 08, 2022 11:21:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
 INFO: Insert Login negative credentials...
-Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+Eki 08, 2022 11:21:53 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
 INFO: User logged out...  You can login if you want...
-Eki 08, 2022 8:10:53 ÖS pageObjects.SampleAppLoginPage clickLoginButton
+Eki 08, 2022 11:21:54 ÖS pageObjects.SampleAppLoginPage clickLoginButton
 INFO: Click Login Button...
-Eki 08, 2022 8:10:54 ÖS pageObjects.SampleAppLoginPage checkLoginStatus
+Eki 08, 2022 11:21:54 ÖS pageObjects.SampleAppLoginPage checkLoginStatus
 INFO: Check login status...
 ]]></system-err>
   </testcase>
-  <testcase name="Sample App : Success login #1" classname="SampleApp features" time="3.977"/>
-  <testcase name="Sample App : Success login #2" classname="SampleApp features" time="4.616"/>
-  <testcase name="Sample App : Success login #3" classname="SampleApp features" time="5.08"/>
+  <testcase name="Sample App : Success login #1" classname="SampleApp features" time="4.983">
+    <failure message="Invalid Username/Password expected:&lt;[Invalid username/password]&gt; but was:&lt;[Welcome, &apos;&apos;!]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, ''!]>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Sample App : Success login &amp#27;[90m# src/test/java/features/SampleApp.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mgo to homepage&amp#27;[0m                       &amp#27;[90m# steps.HomePageSteps.goToHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mclick &amp#27;[0m&amp#27;[32m&amp#27;[1msampleapp&amp#27;[0m&amp#27;[32m href link&amp#27;[0m             &amp#27;[90m# steps.HomePageSteps.clickHrefLink(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32menter &amp#27;[0m&amp#27;[32m&amp#27;[1m''&amp#27;[0m&amp#27;[32m  and &amp#27;[0m&amp#27;[32m&amp#27;[1m''&amp#27;[0m                       &amp#27;[90m# steps.SampleAppPageSteps.enterAnd(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick Log In button&amp#27;[0m                    &amp#27;[90m# steps.SampleAppPageSteps.clickLogInButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mcheck &amp#27;[0m&amp#27;[31m&amp#27;[1msuccessLogin&amp#27;[0m&amp#27;[31m login status&amp#27;[0m       &amp#27;[90m# steps.SampleAppPageSteps.checkLoginStatus(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, ''!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at pageObjects.SampleAppLoginPage.checkLoginStatus(SampleAppLoginPage.java:44)
+	at steps.SampleAppPageSteps.checkLoginStatus(SampleAppPageSteps.java:18)
+	at âœ½.check successLogin login status(file:///C:/Users/onur.tarar/IdeaProjects/CucumberSpriteCloud/src/test/java/features/SampleApp.feature:20)
+&amp#27;[0m
+Exception while getting SS :   ----The filename, directory name, or volume label syntax is incorrect
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 3879
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Eki 08, 2022 11:21:55 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Eki 08, 2022 11:21:58 ÖS pageObjects.HomePage clickHrefLink
+INFO: Click Href...
+Eki 08, 2022 11:21:58 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+INFO: Insert Login negative credentials...
+Eki 08, 2022 11:21:58 ÖS pageObjects.SampleAppLoginPage enterUsernamePassParams
+INFO: User logged out...  You can login if you want...
+Eki 08, 2022 11:21:59 ÖS pageObjects.SampleAppLoginPage clickLoginButton
+INFO: Click Login Button...
+Eki 08, 2022 11:21:59 ÖS pageObjects.SampleAppLoginPage checkLoginStatus
+INFO: Check login status...
+]]></system-err>
+  </testcase>
+  <testcase name="Sample App : Success login #2" classname="SampleApp features" time="4.93"/>
+  <testcase name="Sample App : Success login #3" classname="SampleApp features" time="4.511"/>
 </testsuite>
