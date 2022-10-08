@@ -1,22 +1,25 @@
 package utils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.io.IOException;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.logging.Logger;
 
 public class BaseActions {
+
     public static Logger logger = Logger.getLogger(String.valueOf(BaseActions.class));
     public static WebDriver webDriver;
     public static WebDriverWait wait;
 
     public void initializeDriver(){
         Driver driver = new Driver();
-        //TODO haburayi driver çekmeden direkt go to yazarak çalıştırsam daha iyi gibin
         webDriver = driver.setup();
         wait = new WebDriverWait(webDriver, 30);
     }
@@ -25,6 +28,15 @@ public class BaseActions {
         if (webDriver!=null){
             webDriver.quit();
         }
+    }
+
+
+    public void getScreenShot(String scenarioName) throws IOException {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        TakesScreenshot ts = (TakesScreenshot) webDriver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        FileUtils.copyFile(source,new File("target/screenshots/" + sdf.format(timestamp.getTime())+ "/" +scenarioName+".png"));
     }
 
     public void goToHomepage() {

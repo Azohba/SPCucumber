@@ -1,10 +1,10 @@
-Feature: Client Delay features
+Feature: SampleApp features
 
   Background:
     Given go to homepage
 
 
-  Scenario:  Sample App : Success login
+  Scenario:  Sample App - Success login
   -------------------------------
     When click sampleapp href link
     And  enter Onur  and pws

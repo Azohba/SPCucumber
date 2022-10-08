@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Runner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 77.843 sec <<< FAILURE! - in Runner
+Sample App - Success login(SampleApp features)  Time elapsed: 4.91 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Invalid Username/Password expected:<[Invalid username/password]> but was:<[Welcome, Onur!]>
+
