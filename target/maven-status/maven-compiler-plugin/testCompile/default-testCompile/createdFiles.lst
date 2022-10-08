@@ -1,0 +1,12 @@
+models\UserInfoModel.class
+pageObjects\DynamicTablePage.class
+steps\ClientDelayPageSteps.class
+pageObjects\HomePage.class
+utils\Driver.class
+pageObjects\ClientSideDelayPage.class
+steps\DynamicTablePageSteps.class
+pageObjects\SampleAppLoginPage.class
+utils\BaseActions.class
+Runner.class
+steps\HomePageSteps.class
+steps\SampleAppPageSteps.class
