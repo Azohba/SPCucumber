@@ -31,12 +31,12 @@ public class BaseActions {
     }
 
 
-    public void getScreenShot(String scenarioName) throws IOException {
+    public void getScreenShot(String scenarioName,String stepName) throws IOException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         TakesScreenshot ts = (TakesScreenshot) webDriver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        FileUtils.copyFile(source,new File("target/screenshots/" + sdf.format(timestamp.getTime())+ " - " +scenarioName+".png"));
+        FileUtils.copyFile(source,new File("reports/screenshots/" + sdf.format(timestamp.getTime())+ "-"+scenarioName+"-" + stepName+".png"));
     }
 
     public void goToHomepage() {

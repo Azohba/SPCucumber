@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
 
-
     public WebDriver setup(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();

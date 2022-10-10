@@ -12,9 +12,12 @@ public class Calliope {
                 .build();
         MediaType mediaType = MediaType.parse("multipart/form-data");
         RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
-                .addFormDataPart("file[]","/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/cucumber-results.json",
+                .addFormDataPart("file[]","/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/cucumber-results.xml",
                         RequestBody.create(MediaType.parse("application/octet-stream"),
-                                new File("/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/cucumber-results.json")))
+                                new File("/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/cucumber-results.xml")))
+                .addFormDataPart("attachment[]","/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/*.png",
+                        RequestBody.create(MediaType.parse("application/octet-stream"),
+                                new File("/C:/ProgramData/Jenkins/.jenkins/workspace/SpriteCloudCucumberProject/reports/cucumber-results.xml")))
                 .build();
         Request request = new Request.Builder()
                 .url("https://app.calliope.pro/api/v2/profile/4508/import/")

@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -22,9 +23,10 @@ public class HomePageSteps {
    @After
    public void afterScenario(Scenario scenario){
        BaseActions baseActions = new BaseActions();
+       Step step = null;
        if (scenario.isFailed()){
            try {
-               baseActions.getScreenShot(scenario.getName() );
+               baseActions.getScreenShot(scenario.getName(),String.valueOf(step));
            }catch (Exception e){
                System.out.println("Exception while getting SS :   ----" + e.getMessage());
            }
